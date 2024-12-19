@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Solutions Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
         <div class="logo">Student Solutions Hub</div>
         <nav>
@@ -15,33 +18,54 @@
                 <li><a href="#financial-aid">Financial Aid</a></li>
                 <li><a href="#time-management">Time Management</a></li>
                 <li><a href="#networking">Networking</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Empowering Students to Succeed in a Challenging World</h1>
-            <button class="cta">Explore Solutions Now</button>
-        </section>
-        <section class="features">
-            <div class="feature">
-                <img src="scholarships-icon.png" alt="Scholarships">
-                <h3>Scholarships & Financial Aid</h3>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Empowering Students to Succeed</h1>
+            <p>Discover tools, resources, and solutions to overcome financial challenges.</p>
+            <a href="#solutions" class="btn">Explore Solutions</a>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <h2>Our Solutions</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Financial Aid</h3>
+                <p>Find scholarships and funding to reduce tuition costs.</p>
             </div>
-            <div class="feature">
-                <img src="time-management-icon.png" alt="Time Management">
-                <h3>Time Management Tools</h3>
+            <div class="card">
+                <h3>Time Management</h3>
+                <p>Use tools to organize your studies and work efficiently.</p>
             </div>
-            <div class="feature">
-                <img src="networking-icon.png" alt="Networking">
-                <h3>Networking & Career Building</h3>
+            <div class="card">
+                <h3>Networking</h3>
+                <p>Connect with mentors and access career opportunities.</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Student Solutions Hub. All rights reserved.</p>
+        <p>&copy; 2024 Student Solutions Hub | All Rights Reserved</p>
     </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
