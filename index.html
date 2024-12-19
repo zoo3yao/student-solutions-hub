@@ -5,73 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Solutions Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header><div class="cards">
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/yourusername/repository-name/main/image1.png" alt="Scholarships" class="card-img">
-        <h3>Scholarships & Financial Aid</h3>
-        <p>Find scholarships to reduce tuition costs.</p>
-    </div>
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/yourusername/repository-name/main/image2.png" alt="Time Management" class="card-img">
-        <h3>Time Management Tools</h3>
-        <p>Organize your tasks and study schedule efficiently.</p>
-    </div>
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/yourusername/repository-name/main/image1.png" alt="Description of image" width="300px">
-        <h3>Networking & Career Building</h3>
-        <p>Connect with mentors and career opportunities.</p>
-    </div>
-</div>
+    <!-- Header -->
+    <header>
+        <h1>Student Solutions Hub</h1>
+        <p>Your guide to scholarships, time management, and networking.</p>
     </header>
 
-    <!-- Banner Section -->
-    <section id="home" class="banner">
-        <div class="banner-content">
-            <h1>Empowering Students to Succeed</h1>
-            <p>Discover tools, resources, and solutions to overcome financial challenges.</p>
-            <a href="#solutions" class="btn">Explore Solutions</a>
-        </div>
-    </section>
-
     <!-- Solutions Section -->
-    <section id="solutions" class="solutions">
-        <h2>Our Solutions</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Financial Aid</h3>
-                <p>Find scholarships and funding to reduce tuition costs.</p>
-            </div>
-            <div class="card">
-                <h3>Time Management</h3>
-                <p>Use tools to organize your studies and work efficiently.</p>
-            </div>
-            <div class="card">
-                <h3>Networking</h3>
-                <p>Connect with mentors and access career opportunities.</p>
-            </div>
+    <section class="solutions">
+        <div class="card">
+            <img src="image1.jpg" alt="Scholarships and Financial Aid">
+            <h2>Scholarships & Financial Aid</h2>
+            <p>Find the best financial support to reduce tuition fees.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Time Management">
+            <h2>Time Management Tools</h2>
+            <p>Organize your time effectively to balance studies and work.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Networking">
+            <h2>Networking & Career Building</h2>
+            <p>Connect with mentors and discover new career opportunities.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Student Solutions Hub | All Rights Reserved</p>
+        <p>&copy; 2024 Student Solutions Hub. All Rights Reserved.</p>
     </footer>
-
-    <!-- Smooth Scrolling Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
